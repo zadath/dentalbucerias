@@ -28,6 +28,7 @@
 
   .navbar-nav > li {
     margin-left: 10px;
+    
   }
 
   .navbar-collapse {
@@ -118,6 +119,7 @@
 
   .navbar-nav > li {
     margin-left: 0;
+    color: #333;
   }
 
   #main-slider .carousel h1 {
