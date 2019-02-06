@@ -91,7 +91,7 @@
         <div class="container">
             <div class="large-title text-center">        
                 <h2>Escríbenos</h2>
-                <p>Dejanos tu mensaje solicitando información de servicios y costos <br> no olvides ingresar tu télefono para un seguimiento oportuno!</p>
+                <p>Dejanos tu mensaje solicitando información de servicios y costos <br> no olvides ingresar tu télefono para un seguimiento oportuno! P H P</p>
             </div> 
             <div class="row contact-wrap"> 
                 <div class="status alert alert-success" style="display: none"></div>
