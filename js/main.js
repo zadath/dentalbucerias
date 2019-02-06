@@ -43,15 +43,16 @@ jQuery(function ($) {
     });
 
     // Contact form
-    var form = $('#main-contact-form');
+    var form = $('#2main-contact-form');
     form.submit(function (event) {
         event.preventDefault();
         var form_status = $('<div class="form_status"></div>');
+        //var form_status = $('#main-contact-form');
         $.ajax({
             url: $(this).attr('action'),
 
             beforeSend: function () {
-                form.prepend(form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn());
+                form.prepend(form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Enviando correo...</p>').fadeIn());
             }
         }).done(function (data) {
             form_status.html('<p class="text-success">' + data.message + '</p>').delay(3000).fadeOut();
