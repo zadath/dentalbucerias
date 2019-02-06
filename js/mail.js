@@ -8,6 +8,7 @@ form.submit(function (event) {
     $.ajax({
         url: $(this).attr('action'),
          type: 'POST', // form submit method get/post
+         contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
          dataType: 'html', // request type html/json/xml
          data: form.serialize(), // serialize form data
 
