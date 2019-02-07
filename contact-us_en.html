@@ -17,6 +17,7 @@
     <link href="css/icomoon.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <script src="librerias/jquery-3.2.1.min.js"></script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -24,12 +25,11 @@
     <link rel="shortcut icon" href="images/ico/tooth.svg">
 </head>
 <!--/head-->
-    
-
+   
 <body>
 
     <header id="header">
-        <div class="top-bar" style="background-color: #fff">
+        <div class="top-bar" style="background-color:  #fff">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
@@ -43,15 +43,15 @@
                         <div class="social">
                             <ul class="social-share">
                                 <li><a href="https://www.facebook.com/DraAlbaNydia/" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://www.instagram.com/dentistabucerias/" title="Instagram" target="_blank"><i class="fa fa-instagram" ></i></a></li> 
-                            </ul> 
+                                <li><a href="https://www.instagram.com/dentistabucerias/" title="Instagram" target="_blank"><i class="fa fa-instagram" ></i></a></li>  
+                            </ul>  
                         </div>
                     </div>
                 </div>
             </div>
             <!--/.container-->
         </div>
-        <!--/.top-bar--> 
+        <!--/.top-bar-->
 
         <nav class="navbar navbar-inverse" role="banner" style="background-color:  #fff;">
             <div class="container">
@@ -64,96 +64,73 @@
                     </button>
                     <a class="navbar-brand" href="principal"><img src="images/AlbaLogo_2.png" alt="logo" width="130" style="margin-bottom: 10px"></a>
                 </div>
-
+                
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="principal">Home</a></li>
                         <li><a href="about-us_en">About</a></li>
                         <li><a href="services_en">Services</a></li>
-                        <li class="active"><a href="pricing">Pricing</a></li>
+                        <li><a href="pricing">Pricing</a></li>
                         <li><a href="promos_en">Deals</a></li>
-                        <li><a href="gallery">Gallery</a></li>                        
-                        <li><a href="contact-us_en">Contact</a></li>                      
+                        <li><a href="gallery">Gallery</a></li>
+                        <li class="active"><a href="contact-us_en">Contact</a></li>
                     </ul>
                 </div>
-            </div>
-            <!--/.container-->
-        </nav>
-        <!--/nav-->
-    </header>
-    <!--/header-->
-    
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+
     <div class="page-title" style="background-image: url(images/servicios2.jpg)">
-        <h1>Special prices for treatment</h1>
+        <h1>Contact us</h1>
     </div>
-   
-    <section id="testimonial">
+
+    <section id="contact-page">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about-img">
-                        <img src="images/precios1.jpg" alt="">
+            <div class="large-title text-center">        
+                <h2>Write us</h2>
+                <p>Leave us your message requesting information of services and costs <br> do not forget to enter your phone for a timely follow-up!</p>
+            </div> 
+            <div class="row contact-wrap"> 
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" action="nmail.php" method="post">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Name *</label> 
+                            <input type="text" name="nombre" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="correo" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="number" name="tel" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Company name</label>
+                            <input type="text" name="empresa" class="form-control">
+                        </div>                        
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="about-content">
-                        <div class="card">
-                            <div class="card-header"> 
-                                Dental cleaning
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title">$500.00 m.n.</h5>
-                              <p class="card-text">The cleaning is done completely on all your teeth</p>
-                              <br>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header"> 
-                                Consultation and cleaning
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title">$ 950.00 m.n.</h5>
-                              <p class="card-text">The Dental consultation includes a complete digital radiography and intraoral photographs. The cleaning is with ultrasound in addition to polishing.</p>
-                                <br>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header"> 
-                                Whitening
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title">$ 2,500.00 m.n.</h5>
-                              <p class="card-text">This service includes a 45-minute session where we perform dental cleaning and whitening of your teeth.</p>
-                               <br>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header"> 
-                                Resins
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title">Prices range from $ 700.00 to $1,200.00 m.n.</h5>
-                              <p class="card-text">For obturation of teeth or Molars with Caries or Fractures. Cost is by size and extension of the cavity. Dental Exam Price. </p>
-                              <br>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header"> 
-                                Endodontics
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title">$3,200.00 m.n.</h5>
-                              <p class="card-text">For both molars and teeth, the price is the same.</p>
-                               
-                            </div>
-                          </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <input type="text" name="asunto" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea name="mensaje" required="required" class="form-control" rows="8"></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Send</button>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </form> 
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#contact-page-->
 
-        </div>    
-    </section>
-
+    
     <section id="bottom">
         <div class="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
@@ -243,6 +220,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/mail.js"></script>
 </body>
 
 </html>
