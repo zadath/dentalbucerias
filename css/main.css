@@ -319,8 +319,8 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav>.open>a:hover,
 .navbar-inverse .navbar-nav>.open>a:focus {
     background-color: #3498db;
+    /*color: #3498db;*/
     color: #fff;
-    /*color: #333;*/
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu {
@@ -669,7 +669,7 @@ input.search-form:hover {
     margin: 0 0 40px;
     -webkit-transition: .4s;
     transition: .4s;
-    color: #707070;
+    color: #0f0f0f;
     font-size: 16px;
     line-height: 26px;
 }
@@ -943,7 +943,7 @@ a.accordion-toggle i {
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: ##3498db;
+    background-color: #3498db;
     top: 50%;
     left: 50%;
     color: #fff;
@@ -1897,7 +1897,7 @@ ul.pagination>li>a i {
 
 ul.pagination>li.active>a,
 ul.pagination>li:hover>a {
-    background-color: #3498db ;
+    background-color: #3498db;
     color: #fff;
 }
 
